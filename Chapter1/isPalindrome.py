@@ -15,6 +15,8 @@ def isPalindrome(str):
 			if(charCount%2==1 and s[i-1] != ' ' and s[i]!=' '):
 				oddCount+=1
 			charCount=1
+	if(charCount%2==1): #take care of checking last letter
+		oddCount+=1
 	if oddCount > 1:
 		return False
 	else:
@@ -22,4 +24,6 @@ def isPalindrome(str):
 
 if __name__=="__main__":
 	str = "Tact       C   o  a"
+	str2="aabbcddd"
 	print isPalindrome(str)
+	print isPalindrome(str2)

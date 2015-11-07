@@ -7,7 +7,7 @@ def rotateMatrix(mat,N):
 	# create an empty matrix to hold rotated matrix
 	newMat=[]
 	for i in range(N):
-		newMat.append(range(N))
+		newMat.append(range(N)) # size newMat the same as mat
 	for i in range(N):
 		for j in range(N):
 			newMat[j][N-1-i]=mat[i][j]
